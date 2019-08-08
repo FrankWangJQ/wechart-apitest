@@ -2,9 +2,9 @@
 
 import pytest
 
-from weixin.contact.token import Weixin
+from tests.utils import Utils
 
 
 @pytest.fixture(scope="session")
 def token():
-    return Weixin.get_token_new()
+    return Utils.get_token_new()
